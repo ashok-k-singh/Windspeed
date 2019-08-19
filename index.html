@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title> Ashok HTML Windspeed Page </title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="container">    
+        <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <li> <a class="navbar-link" href="https://ashok-k-singh.github.io">Home</a> </li>                     
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Plots
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <a class="dropdown-item" href="https://ashok-k-singh.github.io/Temperature">Max Temperature</a>
+                            <a class="dropdown-item" href="https://ashok-k-singh.github.io/Humidity">Humidity</a>
+                            <a class="dropdown-item" href="https://ashok-k-singh.github.io/Cloudiness">Cloudiness</a>
+                            <a class="dropdown-item" href="https://ashok-k-singh.github.io/Windspeed">Wind Speed</a>
+                        </div>
+                    </li>
+
+                    <li> <a class="nav-link" href="https://ashok-k-singh.github.io/Webcomparison" > Comparison </a> </li>      
+                    <li> <a class="nav-link" href="https://ashok-k-singh.github.io/Webcities" > Data </a> </li>  
+
+                </ul>
+            </div>
+        </nav>   
+        
+        <section id="main-figure">
+            <section id="figure">
+                <h4 id="fig-name2">City Latitude vs Wind Speed </h4>                   
+                <img id="fig-image" src="Images/Windspeed.png" alt="Windspeed Map" class = "inline" />
+            </section>
+        
+            <p><br> Differences in atmospheric pressure generate winds. At the Equator, warm 
+                equatorial air rises higher into the atmosphere and migrates toward the poles. At the 
+                same time, cooler, denser air moves over Earth’s surface toward the Equator to replace 
+                the heated air. This causes movement of winds. <br> <br> This web page analyzes how the 
+                windspeed changes as you get closer to the equator. We first pulled the data from the 
+                OpenWeatherMap API to assemble a dataset for over 500 cities. After assembling the 
+                dataset, we used Matplotlib to plot Wind Speed vs. Latitude of these cities. <br> <br> 
+                In our analysis, we found that cities, with latitude closer to the equator, are less 
+                windy. Wind speed is recorded as less than 8 mps on average for most cities closer to 
+                the equator.   
+            </p>
+        </section>
+    </main>
+
+</body>
+
+</html>
